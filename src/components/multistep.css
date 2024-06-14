@@ -1,0 +1,158 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer ol{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+.steps{
+    background: url("./bg-sidebar-mobile.svg");
+    height: 25vh;
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+}
+.steps ol{
+    width: 70%;
+    margin: auto;
+}
+.steps li{
+    line-height: 2;
+}
+.steps button{
+    background: none;
+    border: none;
+    font-family: inherit;
+}
+.steps .buttonNumber{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+}
+.buttonText{
+    display: none;
+}
+.activeButton .buttonNumber{
+    background: #BDE0FF;
+    color: #2E527A;
+}
+.form{
+    background: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    bottom: 2rem;
+    padding: 1rem;
+    margin-top: -2rem;
+}
+.form h1{
+    text-align: left;
+    color: #062951;
+    line-height: 2;
+    font-size: 1.5rem;
+
+}
+.form input{
+    text-align: left;
+    padding-left: 0.5rem;
+    width: 90%;
+}
+.form input::placeholder{
+    color: #BABAC2;
+
+}
+.formDescription{
+    text-align: left;
+    color: #C8C9CD;
+
+}
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+.formGroup input{
+    height: 40px;
+    border: 1px solid #C8C9CD ;
+}
+.formGroup label{
+    color: #062951;
+    padding-bottom: 0.3rem;
+
+}
+.stepDescription{
+    display: none;
+}
+@media (min-width: 768px){
+    .container{
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+        padding: 1rem;
+    }
+    .steps{
+        width: 30%;
+    }
+    .buttonText{
+        display: block;
+    }
+    
+.formContainer ol{
+   flex-direction: column;
+}
+.container{
+    background: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.form{
+    margin-top: 0;
+
+}
+.steps{
+    background: url("./bg-sidebar-desktop.svg");
+    height: auto;
+    padding-top: 0;
+    min-height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+}
+.steps button{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.stepDescription{
+    display: flex;
+    color: #A49FFF;
+    font-size: 0.7rem;
+}
+.buttonText{
+    font-weight: bold;
+    color: #fff;
+}
+
+}

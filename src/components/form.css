@@ -1,0 +1,275 @@
+.addonsContainer {
+  display: flex;
+}
+.formFooter,
+.buttonsContainer {
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  padding: 1rem 0;
+  max-width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  left: 0;
+}
+.buttonsContainer {
+  justify-content: space-between;
+}
+.formFooter button,
+.buttonsContainer button {
+  color: #fff;
+  background: #203f6a;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-right: 1rem;
+}
+.buttonsContainer .backButton {
+  margin-left: 1rem;
+  background: #fff;
+  color: #b7b7c0;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan {
+  color: #435b7a;
+}
+.plan .price {
+  color: #ccccd5;
+}
+.toggleButton {
+  margin-top: 2rem;
+}
+
+input[name="option"] {
+  opacity: 0;
+}
+.plan label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+input[name="option"]:checked + span label {
+  border: 1px solid #b4b2dc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+label[for="Pro"] {
+  background: url("./icon-pro.svg");
+  background-position-x: 10px;
+
+  background-position-y: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  padding-left: 4rem;
+}
+
+label[for="Arcade"] {
+  background: url("./icon-arcade.svg");
+  background-position-x: 10px;
+
+  background-position-y: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+
+  padding-left: 4rem;
+}
+
+label[for="Advanced"] {
+  background: url("./icon-advanced.svg");
+  background-position-x: 10px;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+
+  padding-left: 4rem;
+}
+
+.yearlyPrice{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+.free{
+  color: #03285A;
+  font-size: 0.8rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #03285A;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #03285A;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #03285A;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  -o-border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.switcherContainer{
+  background: #F8F9FE;
+  padding: 1rem 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.switchText{
+  color: #03285A;
+}
+.switchText.active{
+  font-weight: bold;
+}
+.addon{
+  display: flex;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+.addon input{
+  width: 5%;
+}
+.addonText{
+  text-align: left;
+  padding-left: 0.5rem;
+  width: 90%;
+  color: #CDCDD5;
+}
+.addonText p{
+  text-align: left;
+  color: #03285A;
+  font-weight: bold;
+  font-size: 1.1rem;
+
+}
+.plus{
+  color: #B1ABE3;
+}
+.summaryTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #03285A;
+}
+.addonsContainer li{
+  list-style: none;
+  text-align: left;
+
+}
+.summaryContainer{
+  text-transform: capitalize;
+}
+.addonsContainer li, .summaryTotal span{
+  color: #BBBBC5;
+}
+.summaryTotal .price{
+  color: #675DCE;
+  font-weight: 600;
+}
+.buttonsContainer .confirmButton{
+  background: #675DCE;
+
+}
+.addonsContainer .price{
+  color: #203f6a;
+}
+.summaryContainer li,.summaryContainer p,.summaryTotal{
+line-height: 2;
+}
+.addonsContainer, .summaryTotal{
+  display: flex;
+  justify-content: space-between;
+}
+.orderPlacedContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.orderPlacedContainer h1{
+  text-align: center;
+  font-weight: 600;
+}
+.orderPlacedContainer p{
+  color: #AAAAB2;
+}
+@media (min-width: 768px){
+  .formFooter, .buttonsContainer{
+position: static;
+margin-top: 3rem;
+  }
+  .form{
+    padding-left: 3rem;
+  }
+
+}
