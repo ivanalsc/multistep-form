@@ -68,7 +68,7 @@ input[name="option"]:checked + span label {
   -o-border-radius: 10px;
 }
 label[for="Pro"] {
-  background: url("./icon-pro.svg");
+  background: url("/icon-pro.svg");
   background-position-x: 10px;
 
   background-position-y: center;
@@ -79,7 +79,7 @@ label[for="Pro"] {
 }
 
 label[for="Arcade"] {
-  background: url("./icon-arcade.svg");
+  background: url("/icon-arcade.svg");
   background-position-x: 10px;
 
   background-position-y: center;
@@ -91,7 +91,7 @@ label[for="Arcade"] {
 }
 
 label[for="Advanced"] {
-  background: url("./icon-advanced.svg");
+  background: url("/icon-advanced.svg");
   background-position-x: 10px;
   background-position-y: center;
   background-repeat: no-repeat;
